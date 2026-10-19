@@ -1,9 +1,10 @@
 body {
     font-family: "Roboto", sans-serif;
+    margin:0;
 }
 
 div {
-    margin: 25px 250px 25px 250px;
+   /* margin: 25px 250px 25px 250px;*/
 }
 
 
@@ -12,36 +13,81 @@ header {
     display: flex;
     background-color: #1F2937;
     align-items: center;
+    width: 100%;
+}
+
+.content-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
 }
 
 .logo {
     font-size: 48px;
     font-weight: 800;
-    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-links {
+    flex: 1;
+    display: flex;
 }
 
 .nav-links ul {
     list-style-type: none;
     display: flex;
-    background-color: aqua;
-    gap: 100px;
+    gap: 50px;
     font-size: 18px;
+    justify-content: space-between;
+    width: 100%;
+    background-color: aqua;
+    outline: 2px solid red;
 }
 
 .section_one {
     background-color: #1F2937;
     display: flex;
-
+    justify-content: space-between;
 }
 
 .section_one h1 {
     font-size: 36px;
     font-weight: 900;
     color: #ffffff;
+    
+}
+
+.section_one .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+    flex:1;    
+    max-width: 800px; /*delete later*/
+    background-color: blue;
+    padding: 0;
+
+}
+
+.image-placeholder {
+    height: 200px;
+    width: 450px;
+    border: 4px solid black;
+    display: flex;
+    flex-shrink: 0;
+    background-color: red;
+
 }
 
 .section_two {
-    background-color: lightgrey;
+    background-color: white;
     display: flex;
     flex-direction: column;
 }
@@ -49,16 +95,32 @@ header {
 .section_two h1 {
     font-size: 25px;
     font-weight: 800;
-    color: aqua;
+    color: black;
     text-align: center;
 }
 
-.body_info ul {
+.body_info ul { /* my container: contains the list of images with subtext */
     display: flex;
     flex-direction: row;
+    justify-content: center;
     list-style: none;
     gap: 20px;
     padding: 0;
+}
+
+.body_info li { /* the individual list item */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.list-image-placeholder { /* the image placeholders for the list */
+    height: 150px;
+    width: 150px;
+    border: 4px solid blue;
+    flex-shrink: 0;
+
 }
 
 .section_three {
@@ -74,6 +136,14 @@ header {
     color: black;
 }
 
+.button-container {
+    background-color: blue;
+    width: 600px;
+    height: 100px;
+    display: flex;
+    padding: 50px;
+    align-items: center;
+}
 .author {
     display: flex;
     font-size: 20px;
