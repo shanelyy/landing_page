@@ -12,6 +12,24 @@ header {
     width: 100%;
 }
 
+button {
+    color: white;
+    background-color: #3882F6;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 8px 25px;
+    border-style: hidden;
+    font-family: inherit;   /* buttons don't inherit the page font by default */
+    transition: background-color 0.2s ease;
+
+
+}
+
+button:hover {
+    background-color: white;
+    color: #3882F6;
+}
+
 .logo {
     color: white;
 }
@@ -66,13 +84,13 @@ header {
 
 .section_one {
     background-color: #1F2937;
+    color: #E5E7EB;
 }
 
 .info-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     gap: 20px;
     padding: 50px 20px;
 }
@@ -83,6 +101,7 @@ header {
     display: flex;
     flex-shrink: 0;
     background-color: gray;
+
 } /* see to edit this */
 
 .section_two {
@@ -118,6 +137,8 @@ header {
     height: 150px;
     width: 150px;
     border: 4px solid blue;
+    border-radius: 8px;
+
 
 }
 
@@ -142,8 +163,14 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    padding: 50px 20px;
+    padding: 30px 20px;
+    margin: 100px 0px;
     color: white;
+    border-radius: 8px;
+}
+
+.button-container .cta  {
+    margin: 0px 100px;
 }
 
 .author {
@@ -152,6 +179,12 @@ header {
     justify-content: flex-end;
     font-weight: 600;
 }
+
+.section_four button {
+    border-color: white;
+    border-style:groove;
+}
+
 
 footer {
     display: flex;
