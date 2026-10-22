@@ -32,9 +32,6 @@ button:hover {
     color: #3882F6;
 }
 
-.logo {
-    color: white;
-}
 
 .nav-links a {
     color: #d1d5db;
@@ -52,8 +49,11 @@ button:hover {
 }
 
 .logo {
-    font-size: 48px;
+    font-size: 24px;
     font-weight: 800;
+    color: #F9FAF8;
+    line-height: 1;
+
 }
 
 .header-container {
@@ -63,6 +63,7 @@ button:hover {
     justify-content: space-between;
     gap: 20px;
     padding: 50px 20px;
+    align-items: center
     
 }
 
@@ -71,6 +72,7 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
     gap: 50px;
     font-size: 18px;
 }
@@ -79,6 +81,7 @@ button:hover {
     font-size: 36px;
     font-weight: 900;
     color: #ffffff;
+    line-height: 0.8;
 }
 
 
@@ -93,6 +96,19 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 15px;
+}
+
+.section_one .hero-header {
+    font-size: 48px;
+    color:#F9FAF8;
+    font-weight: 900;
+
+}
+
+.section_one p {
+    font-size: 18;
+    color: #E5E7EB;
 }
 
 .info-container {
@@ -105,6 +121,7 @@ button:hover {
 
 .info-container button {
     align-self: flex-start;
+    background-color: #3882F6;
 }
 
 .image-placeholder {
@@ -124,9 +141,9 @@ button:hover {
 }
 
 .section_two h2 {
-    font-size: 32px;
-    font-weight: 800;
-    color: black;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
     text-align: center;
     padding: 25px;
 }
@@ -168,7 +185,7 @@ button:hover {
 }
 
 .section_three blockquote {
-    color: black;
+    color: #1F2937;
     font-style: italic;
 }
 
